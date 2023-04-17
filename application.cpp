@@ -15,6 +15,7 @@
 #include"title.h"
 #include"game.h"
 #include"result.h"
+#include"texture.h"
 
 //**********************************************************************************************
 // 静的メンバ変数の宣言
@@ -26,6 +27,7 @@ CRenderer *CApplication::m_pRenderer = nullptr;
 CInputkeyboard *CApplication::m_pInputkeyboard = nullptr;
 CApplication::MODE CApplication::m_mode = MODE_NONE;
 CObject *CApplication::m_pGameMode = nullptr;
+CTexture *CApplication::m_pTexture = nullptr;
 
 //==============================================================================================
 // コンストラクタ
@@ -49,6 +51,7 @@ HRESULT CApplication::Init(HINSTANCE hInstance, HWND hWnd)
 	// クラスの生成
 	m_pInputkeyboard = new CInputkeyboard;		// キーボード
 	m_pRenderer = new CRenderer;				// レンダリング
+	m_pTexture = new CTexture;					// テクスチャ
 
 	// 初期化処理
 	m_pInputkeyboard->Init(hInstance, hWnd);	// キーボード
@@ -82,6 +85,14 @@ void CApplication::Uninit()
 		m_pInputkeyboard->Uninit();
 		delete m_pInputkeyboard;
 		m_pInputkeyboard = nullptr;
+	}
+
+	//テクスチャの終了
+	if (m_pTexture != nullptr)
+	{
+		m_pTexture->ReleaseAll();
+		delete m_pTexture;
+		m_pTexture = nullptr;
 	}
 
 	CObject::ReleaseAll();

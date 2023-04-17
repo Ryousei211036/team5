@@ -68,7 +68,7 @@ void CGame::Update()
 
 	if (pKeyboard->GetKeyboardTrigger(DIK_RETURN))
 	{
-		CFade::SetFade(CApplication::MODE_TITLE, 0.05f);
+		CFade::SetFade(CApplication::MODE_RESULT, 0.05f);
 	}
 }
 

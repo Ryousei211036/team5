@@ -9,7 +9,7 @@
 
 #include <d3dx9.h>
 #include"Object.h"
-//#include"texture.h"
+#include"texture.h"
 
 class CInputkeyboard;
 class CTexture;
@@ -33,7 +33,7 @@ public:
 	void Setrot(float rot);															// 角度の設定
 	void SetTexPos(float top, float row, float right, float left);					// テクスチャ座標の設定
 	void AnimTexture(int nPattern, int nPatternMax);
-	//void SetTexture(CTexture::TEXTURE texture);										// テクスチャの設定
+	void SetTexture(CTexture::TEXTURE texture);										// テクスチャの設定
 	bool SetDisappear(float size, float alpha, float sizespeed, float alphaspeed);	// 消える設定
 	void SetCol(D3DXCOLOR col);														// 色の設定
 
@@ -60,7 +60,7 @@ private:
 	float m_fRot;							// ポリゴンの角度
 	D3DXVECTOR3 m_Pos;						// ポリゴンの位置
 	D3DXCOLOR m_Col;						// 色
-	//CTexture::TEXTURE m_texture;			// テクスチャ
+	CTexture::TEXTURE m_texture;			// テクスチャ
 	EObjType m_ObjType;						//オブジェクトのタイプ
 };
 

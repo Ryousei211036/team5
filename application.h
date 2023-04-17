@@ -16,6 +16,7 @@ class CGame;
 class CResult;
 class CObject;
 class CDebugProc;
+class CTexture;
 
 class CApplication
 {
@@ -42,6 +43,7 @@ public:
 	static CRenderer *GetRenderer() { return m_pRenderer; }
 	static CInputkeyboard *GetInputKeyboard() { return m_pInputkeyboard; }
 	static MODE GetMode() { return m_mode; }
+	static CTexture *GetTexture() { return m_pTexture; }
 
 private:
 	static CRenderer *m_pRenderer;
@@ -50,6 +52,7 @@ private:
 	static CGame *m_pGame;
 	static CResult *m_pResult;
 	static MODE m_mode;
+	static CTexture *m_pTexture;
 	static CObject *m_pGameMode;
 
 	CDebugProc *m_pDebugProc;

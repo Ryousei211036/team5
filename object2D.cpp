@@ -23,7 +23,7 @@ CObject2D::CObject2D(int nPriority) : CObject(nPriority)
 	m_fRot = 0.0f;			// ポリゴンの角度
 	m_pVtxBuff = NULL;
 	m_Col = D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f);
-	//m_texture = CTexture::TEXTURE_NONE;
+	m_texture = CTexture::TEXTURE_NONE;
 }
 
 //==============================================================================================
@@ -48,7 +48,7 @@ HRESULT CObject2D::Init()
 		&m_pVtxBuff,
 		NULL);
 
-	//m_texture = CTexture::TEXTURE_NONE;
+	m_texture = CTexture::TEXTURE_NONE;
 
 	// 頂点バッファ
 	VERTEX_2D *pVtx;
@@ -168,10 +168,10 @@ void CObject2D::Draw()
 	 //頂点フォーマットの設定
 	pDevice->SetFVF(FVF_VERTEX_2D);
 
-	//CTexture *pTexture = CApplication::GetTexture();
+	CTexture *pTexture = CApplication::GetTexture();
 
 	//テクスチャの設定
-	//pDevice->SetTexture(0, pTexture->GetTexture(m_texture));
+	pDevice->SetTexture(0, pTexture->GetTexture(m_texture));
 
 	// ポリゴンの描画
 	pDevice->DrawPrimitive(D3DPT_TRIANGLESTRIP,
@@ -279,10 +279,10 @@ void CObject2D::AnimTexture(int nPattern, int nPatternMax)
 //==============================================================================================
 // テクスチャの設定
 //==============================================================================================
-//void CObject2D::SetTexture(CTexture::TEXTURE texture)
-//{
-//	m_texture = texture;
-//}
+void CObject2D::SetTexture(CTexture::TEXTURE texture)
+{
+	m_texture = texture;
+}
 
 //==============================================================================================
 // 消える設定
