@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{0694943C-6E34-4F92-B09E-6E0A01B13883}</ProjectGuid>
+    <ProjectGuid>{B87CA7E2-7623-4A32-9F0E-85480FE1A36E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>team5</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
