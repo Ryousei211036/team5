@@ -21,6 +21,7 @@ public: /* ’è‹` */
 	enum TEXTURE
 	{	
 		TEXTURE_TITLE = 0,
+		TEXTURE_GAME,
 		TEXTURE_RESULT,
 		TEXTURE_MAX,
 		TEXTURE_NONE

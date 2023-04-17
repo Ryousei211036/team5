@@ -20,6 +20,7 @@
 const char* CTexture::s_FileName[] =
 {// テクスチャのパス
 	"Data/texture/title.jpg",		// タイトル
+	"Data/texture/game.jpg",		// ゲーム
 	"Data/texture/result.jpg",		// リザルト
 };
 

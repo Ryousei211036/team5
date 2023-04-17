@@ -69,7 +69,7 @@ void CFade::Update()
 	CObject2D::Update();
 
 	// F‚ÌÝ’è
-	CObject2D::SetCol({ 1.0f,1.0f,1.0f,m_fAlpha });
+	CObject2D::SetCol({ 0.0f,0.0f,0.0f,m_fAlpha });
 
 	if (FadeMode != FADE_NONE)
 	{
@@ -133,7 +133,7 @@ CFade *CFade::Create()
 	{
 		pFade->Init();
 		pFade->Setposition(D3DXVECTOR3(1280 / 2, 720 / 2, 0.0f));
-		pFade->SetCol(D3DXCOLOR(1.0f, 1.0f, 1.0f, 0.0f));
+		pFade->SetCol(D3DXCOLOR(0.0f, 0.0f, 0.0f, 0.0f));
 	}
 
 	return pFade;

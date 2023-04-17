@@ -37,6 +37,9 @@ HRESULT CGame::Init()
 	// ƒJƒƒ‰‚Ì‰Šú‰»
 	m_pCamera->Init();
 
+	CObject2D *pObject2D = CObject2D::Create({ 1280 / 2, 720 / 2, 0.0f }, { 910.0f, 510.0f, 0.0f });
+	pObject2D->SetTexture(CTexture::TEXTURE_GAME);
+
 	return S_OK;
 }
 
