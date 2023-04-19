@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
@@ -138,4 +139,131 @@
       <Filter>ソース ファイル\00_Code\02_Character</Filter>
     </ClCompile>
   </ItemGroup>
+=======
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\00_Code">
+      <UniqueIdentifier>{3afcd168-0cb9-4d0b-a266-51b91f1452e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\00_Code\00_Main">
+      <UniqueIdentifier>{e95dedf6-ddf5-49ce-be53-3e0ff7b83ec7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\00_Code\00_Main\00_Main">
+      <UniqueIdentifier>{ba650038-f52e-4bcb-bac7-a9089107ec73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\00_Code\00_Main\01_Mode">
+      <UniqueIdentifier>{5e98b3ef-e4e2-4598-bd12-c4e0dbc09525}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\00_Code\01_Object">
+      <UniqueIdentifier>{c74b0e7d-73e3-4279-a603-3ba9bf9d50d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Mode">
+      <UniqueIdentifier>{9f9f151a-72a1-41cc-8070-c0139ea5e6a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\00_Code\Map">
+      <UniqueIdentifier>{5ce15676-109a-468b-9272-bd56782edf48}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="application.h">
+      <Filter>ソース ファイル\00_Code\00_Main\00_Main</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>ソース ファイル\00_Code\00_Main\00_Main</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer.h">
+      <Filter>ソース ファイル\00_Code\00_Main\00_Main</Filter>
+    </ClInclude>
+    <ClInclude Include="title.h">
+      <Filter>ソース ファイル\00_Code\00_Main\01_Mode</Filter>
+    </ClInclude>
+    <ClInclude Include="result.h">
+      <Filter>ソース ファイル\00_Code\00_Main\01_Mode</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>ソース ファイル\00_Code\00_Main\01_Mode</Filter>
+    </ClInclude>
+    <ClInclude Include="fade.h">
+      <Filter>ソース ファイル\00_Code\00_Main\01_Mode</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>ソース ファイル\00_Code</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>ソース ファイル\00_Code</Filter>
+    </ClInclude>
+    <ClInclude Include="inputkeyboard.h">
+      <Filter>ソース ファイル\00_Code</Filter>
+    </ClInclude>
+    <ClInclude Include="texture.h">
+      <Filter>ソース ファイル\00_Code</Filter>
+    </ClInclude>
+    <ClInclude Include="object.h">
+      <Filter>ソース ファイル\00_Code\01_Object</Filter>
+    </ClInclude>
+    <ClInclude Include="object2D.h">
+      <Filter>ソース ファイル\00_Code\01_Object</Filter>
+    </ClInclude>
+    <ClInclude Include="map.h">
+      <Filter>ソース ファイル\00_Code\Map</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="application.cpp">
+      <Filter>ソース ファイル\00_Code\00_Main\00_Main</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル\00_Code\00_Main\00_Main</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer.cpp">
+      <Filter>ソース ファイル\00_Code\00_Main\00_Main</Filter>
+    </ClCompile>
+    <ClCompile Include="title.cpp">
+      <Filter>ソース ファイル\00_Code\00_Main\01_Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="result.cpp">
+      <Filter>ソース ファイル\00_Code\00_Main\01_Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>ソース ファイル\00_Code\00_Main\01_Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="fade.cpp">
+      <Filter>ソース ファイル\00_Code\00_Main\01_Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>ソース ファイル\00_Code</Filter>
+    </ClCompile>
+    <ClCompile Include="input.cpp">
+      <Filter>ソース ファイル\00_Code</Filter>
+    </ClCompile>
+    <ClCompile Include="inputkeyboard.cpp">
+      <Filter>ソース ファイル\00_Code</Filter>
+    </ClCompile>
+    <ClCompile Include="texture.cpp">
+      <Filter>ソース ファイル\00_Code</Filter>
+    </ClCompile>
+    <ClCompile Include="object.cpp">
+      <Filter>ソース ファイル\00_Code\01_Object</Filter>
+    </ClCompile>
+    <ClCompile Include="object2D.cpp">
+      <Filter>ソース ファイル\00_Code\01_Object</Filter>
+    </ClCompile>
+    <ClCompile Include="map.cpp">
+      <Filter>ソース ファイル\00_Code\Map</Filter>
+    </ClCompile>
+  </ItemGroup>
+>>>>>>> 583ba652443ba0528e1249389171d15b4e2cc65c
 </Project>

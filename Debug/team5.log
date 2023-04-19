@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿  title.cpp
   c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
   texture.cpp
@@ -28,3 +29,8 @@
   コードを生成中...
   team5.vcxproj -> C:\Users\student\Documents\Visual Studio 2015\Projects\team5\team5.exe
   team5.vcxproj -> C:\Users\student\Documents\Visual Studio 2015\Projects\team5\team5.pdb (Full PDB)
+=======
+﻿  map.cpp
+  team5.vcxproj -> C:\Users\student\Desktop\team5\team5.exe
+  team5.vcxproj -> C:\Users\student\Desktop\team5\team5.pdb (Full PDB)
+>>>>>>> 583ba652443ba0528e1249389171d15b4e2cc65c
