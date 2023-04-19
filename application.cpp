@@ -16,6 +16,7 @@
 #include"game.h"
 #include"result.h"
 #include"texture.h"
+#include"light.h"
 
 //**********************************************************************************************
 // 静的メンバ変数の宣言
@@ -28,6 +29,7 @@ CInputkeyboard *CApplication::m_pInputkeyboard = nullptr;
 CApplication::MODE CApplication::m_mode = MODE_NONE;
 CObject *CApplication::m_pGameMode = nullptr;
 CTexture *CApplication::m_pTexture = nullptr;
+CLight *CApplication::m_pLight = nullptr;
 
 //==============================================================================================
 // コンストラクタ
@@ -52,13 +54,15 @@ HRESULT CApplication::Init(HINSTANCE hInstance, HWND hWnd)
 	m_pInputkeyboard = new CInputkeyboard;		// キーボード
 	m_pRenderer = new CRenderer;				// レンダリング
 	m_pTexture = new CTexture;					// テクスチャ
+	m_pLight = new CLight;						// ライト
 
 	// 初期化処理
 	m_pInputkeyboard->Init(hInstance, hWnd);	// キーボード
 	m_pRenderer->Init(hWnd, TRUE);				// レンダリング
+	m_pLight->Init();							// ライト
 
 	// ゲームモード
-	m_mode = MODE_TITLE;
+	m_mode = MODE_GAME;
 
 	// モードの定設
 	SetMode(m_mode);

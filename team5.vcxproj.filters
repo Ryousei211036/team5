@@ -28,8 +28,8 @@
     <Filter Include="ソース ファイル\00_Code\01_Object">
       <UniqueIdentifier>{c74b0e7d-73e3-4279-a603-3ba9bf9d50d0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Mode">
-      <UniqueIdentifier>{9f9f151a-72a1-41cc-8070-c0139ea5e6a3}</UniqueIdentifier>
+    <Filter Include="ソース ファイル\00_Code\02_Character">
+      <UniqueIdentifier>{84655196-f091-4fc2-94fa-4c9978cf8134}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -72,6 +72,18 @@
     <ClInclude Include="object2D.h">
       <Filter>ソース ファイル\00_Code\01_Object</Filter>
     </ClInclude>
+    <ClInclude Include="light.h">
+      <Filter>ソース ファイル\00_Code</Filter>
+    </ClInclude>
+    <ClInclude Include="objectX.h">
+      <Filter>ソース ファイル\00_Code\01_Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>ソース ファイル\00_Code\02_Character</Filter>
+    </ClInclude>
+    <ClInclude Include="model.h">
+      <Filter>ソース ファイル\00_Code\02_Character</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="application.cpp">
@@ -112,6 +124,18 @@
     </ClCompile>
     <ClCompile Include="object2D.cpp">
       <Filter>ソース ファイル\00_Code\01_Object</Filter>
+    </ClCompile>
+    <ClCompile Include="light.cpp">
+      <Filter>ソース ファイル\00_Code</Filter>
+    </ClCompile>
+    <ClCompile Include="objectX.cpp">
+      <Filter>ソース ファイル\00_Code\01_Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>ソース ファイル\00_Code\02_Character</Filter>
+    </ClCompile>
+    <ClCompile Include="model.cpp">
+      <Filter>ソース ファイル\00_Code\02_Character</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

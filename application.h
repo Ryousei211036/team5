@@ -17,6 +17,7 @@ class CResult;
 class CObject;
 class CDebugProc;
 class CTexture;
+class CLight;
 
 class CApplication
 {
@@ -44,6 +45,7 @@ public:
 	static CInputkeyboard *GetInputKeyboard() { return m_pInputkeyboard; }
 	static MODE GetMode() { return m_mode; }
 	static CTexture *GetTexture() { return m_pTexture; }
+	static CLight *GetLight() { return m_pLight; }
 
 private:
 	static CRenderer *m_pRenderer;
@@ -54,6 +56,7 @@ private:
 	static MODE m_mode;
 	static CTexture *m_pTexture;
 	static CObject *m_pGameMode;
+	static CLight *m_pLight;
 
 	CDebugProc *m_pDebugProc;
 	bool m_bWireFrame;
