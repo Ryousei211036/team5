@@ -159,6 +159,7 @@
     <ClInclude Include="input.h" />
     <ClInclude Include="inputkeyboard.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="map.h" />
     <ClInclude Include="object.h" />
     <ClInclude Include="object2D.h" />
     <ClInclude Include="renderer.h" />
@@ -174,6 +175,7 @@
     <ClCompile Include="input.cpp" />
     <ClCompile Include="inputkeyboard.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="map.cpp" />
     <ClCompile Include="object.cpp" />
     <ClCompile Include="object2D.cpp" />
     <ClCompile Include="renderer.cpp" />

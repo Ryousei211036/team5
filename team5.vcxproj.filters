@@ -31,6 +31,9 @@
     <Filter Include="ソース ファイル\Mode">
       <UniqueIdentifier>{9f9f151a-72a1-41cc-8070-c0139ea5e6a3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\00_Code\Map">
+      <UniqueIdentifier>{5ce15676-109a-468b-9272-bd56782edf48}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="application.h">
@@ -72,6 +75,9 @@
     <ClInclude Include="object2D.h">
       <Filter>ソース ファイル\00_Code\01_Object</Filter>
     </ClInclude>
+    <ClInclude Include="map.h">
+      <Filter>ソース ファイル\00_Code\Map</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="application.cpp">
@@ -112,6 +118,9 @@
     </ClCompile>
     <ClCompile Include="object2D.cpp">
       <Filter>ソース ファイル\00_Code\01_Object</Filter>
+    </ClCompile>
+    <ClCompile Include="map.cpp">
+      <Filter>ソース ファイル\00_Code\Map</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
